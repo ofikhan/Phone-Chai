@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cart</title>
+		<link rel="icon" href="images/icon.png"/>
+		<link rel='stylesheet' href='fontawesome-free-5.6.3-web/css/all.css'/>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 top-header-height">
+					<div class="row">
+						<div class="col-6 col-m7">
+							<p id="today" class="top-header-left"></p>
+						</div>
+						<div class="col-6 col-m5">
+							<p class="top-header-right"><b><i>We don't have any offline branches</i></b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 col-m4 col-b4 col-l3 header-height headerSmall">
+					<i class="fas fa-mobile-alt logo"></i>
+					<p>P H O N E C H A I</p>
+				</div>
+				<div class="col-10 col-m8 col-b8 col-l9 header-height headerSmall2">
+					<h1 class="title">Welcome to Our Website</h1>
+					<div class="search-area">
+						<input type="text" name="search" class="search-input" placeholder="What phone are you looking for?"/>
+						<input type="submit" value="SEARCH" class="search-btn"/>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 menu-height">
+					<nav>
+						<ul class="main-ul">
+							<li class="main-li"><a href="index.html">Home</a></li>
+							<li class="main-li"><a href="about.html">About</a></li>
+							<li class="main-li"><a href="">Phone Brand</a>
+								<ul class="main-ul">
+									<li class="second-li"><button class="btnNav" id="apple">Apple</button></li>
+									<li class="second-li"><button class="btnNav" id="huawei">Huawei</button></li>
+									<li class="second-li"><button class="btnNav" id="infinix">Infinix</button></li>
+									<li class="second-li"><button class="btnNav" id="samsung">Samsung</button></li>
+									<li class="second-li"><button class="btnNav" id="xiaomi">Xiaomi</button></li>
+								</ul>
+							</li>
+							<li class="main-li"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 content-height">
+					<div class="row">
+						<table class="table cartTable">
+							<form action="" method="post" id="form">
+								<tr>
+									<td>First Name</td>
+									<td>:</td>
+									<td>
+										<input type="text" id="firstName"/>
+										<span id="firstNameError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Last Name</td>
+									<td>:</td>
+									<td>
+										<input type="text" id="lastName"/>
+										<span id="lastNameError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Email Address</td>
+									<td>:</td>
+									<td>
+										<input type="text" id="emailAddress"/>
+										<span id="emailAddressError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Phone Number</td>
+									<td>:</td>
+									<td>
+										<input type="text" id="phoneNumber"/>
+										<span id="phoneNumberError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td>:</td>
+									<td>
+										<input type="password" id="password"/>
+										<input type="checkbox" id="showPassword"/>Show Password
+										<span id="passwordError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Confirm Password</td>
+									<td>:</td>
+									<td>
+										<input type="password" id="confirmPassword"/>
+										<span id="confirmPasswordError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td>Delivery Address</td>
+									<td>:</td>
+									<td>
+										<input type="text" id="deliveryAddress"/>
+										<span id="deliveryAddressError" class="error"></span>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td><input type="submit" id="btnCart" class="btnCart" value="Confirm Order"/></td>
+								</tr>
+							</form>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 footer-height">
+					<div class="row">
+						<div class="col-6 col-m4 col-b5">
+							<div class="footer-left">
+								<p>COPYRIGHT &copy; Battery Low</p>
+							</div>
+						</div>
+						<div class="col-6 col-m8 col-b7">
+							<div class="footer-right">
+								<div class="col-6 col-m4 col-b5">
+									<p>FOLLOW US: </p>
+								</div>
+								<div class="col-6 col-m8 col-b7 footerSmall">
+									<a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook social"></i></a>
+									<a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram social"></i></a>
+									<a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter social"></i></a>
+									<a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin social"></i></a>
+									<a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube social"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
